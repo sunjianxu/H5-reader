@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>H5阅读器</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav_top" style="display:none" id="nav_top">
+            <a href="">
+                <span class="back"></span>
+                <span class="title">返回书架</span>
+            </a>
+        </div>
+        <div class="content">
+            <h3>世界互联网再一次进入乌镇时间。</h3>
+            <p>12月3日至5日，第四届世界互联网大会在其永久会址乌镇举行。四年来，互联网大会与时俱进，见证且推动着互联网健康发展，已成为国际社会加强互联网共享共治的一个重要平台。 </p>
+            <p>“互联网真正让世界变成了地球村，让国际社会越来越成为你中有我、我中有你的命运共同体。”“互联网让世界变成了‘鸡犬之声相闻’的地球村，相隔万里的人们不再‘老死不相往来’”“互联网虽然是无形的，但运用互联网的人们都是有形的，互联网是人类的共同家园。”这样的“金句”，在习主席给互联网大会的讲话、贺信中频频出现。“地球村”和“命运共同体”两个词语，勾勒出了互联网发展的目标——就像乌镇的桥一样，无界的网络将有界的国家、多样的文明联结在一起，也需要全人类共同去守护这个发展共同体、利益共同体。</p>
+            <p>世界互联网大会蓬勃发展的背后，离不开国家主席习近平的关心、关注。</p>
+            <p>四年来，习近平主席或是亲自出席大会发表重要讲话，或是通过视频、贺信等方式和与会嘉宾分享他的观点。习主席一篇篇或长或短的讲话，不变的是真诚的待客之道；不变的是对于互联网发展、治理的“金句良言”……</p>
+            <p>细心的观察者会发现，从“互联互通·共享共治”到“创新驱动造福人类”，再到“发展数字经济 促进开放共享”，连续四届世界互联网大会的关注重点与时俱进，但不变的则是一个彰显大国担当的宏大目标——构建网络空间命运共同体。 </p>
+            <p>而这份责任，中国愿意与世界各国共同承担。“中国愿意同世界各国携手努力，本着相互尊重、相互信任的原则，深化国际合作，尊重网络主权，维护网络安全，共同构建和平、安全、开放、合作的网络空间，建立多边、民主、透明的国际互联网治理体系。”习主席在首届大会贺信中表达的这份大国担当，让“构建网络空间命运共同体”这个目标变得清晰可见、深入人心，得到国际社会的积极响应。
+            </p>
+            <ul class="navgation">
+                <li>上一章</li>
+                <li>下一章</li>
+            </ul>
+        </div>
+        <div class="nav_bottom" style="display:none" id="nav_bottom">
+            <a href="javascript:;">
+                <span class="nav_bottom_icon1"></span>
+                <span>目录</span>
+            </a>
+            <a href="javascript:;" id="fontSize">
+                <span class="nav_bottom_icon2"></span>
+                <span>字体</span>
+                 <!-- 面板 -->
+            <div class="pannerWrapper" style="display:none" id="pannerWrapper">
+                <div class="panel">
+                    <div class="font_size">
+                        <span class="panel_common">字号</span>
+                        <span class="fonSize_btn1" id="bigfontsize">大</span>
+                        <span class="fonSize_btn1"  id="smallfontsize">小</span>
+                    </div>
+                    <div class="bgWrapper">
+                        <span class="panel_common">背景</span>
+                        <div class="bg_color">
+                            <div class="bg_current"></div>
+                        </div>
+                        <div class="bg_color">
+                            <div class="bg_current" ></div>
+                        </div>
+                        <div class="bg_color">
+                            <div class="bg_current"></div>
+                        </div>
+                        <div class="bg_color">
+                            <div class="bg_current"></div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            </a>
+            <a href="javascript:;" id="night">
+                <span class="nav_bottom_icon3"></span>
+                <span class="night_title">夜间</span>
+            </a>
+
+           
+        </div>
+    </div>
+
+    <!-- tap焕出导航栏的面板 -->
+    <div class="tap_panel"></div>
+    <script src="lib/zepto/zepto.min.js"></script>
+    <script src="lib/zepto/event.js"></script>
+    <script src="lib/zepto/touch.js"></script>
+    <script src="lib/zepto/fx.js"></script>
+    <script src="lib/zepto/fx_methods.js"></script>
+    <script>window.jQuery = $;</script>
+    <script src="js/jquery.base64.js"></script>
+    <script src="js/jquery.jsonp.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

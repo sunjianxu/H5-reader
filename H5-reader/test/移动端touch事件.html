@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body,html {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+    <script>
+       window.onload = function () {
+        // var body = document.getElementsByTagName('body')[0];
+        var body = document.querySelector('body');
+        console.log(body);
+        // touchstart刚触摸时触发
+        document.addEventListener('touchstart',function () {
+            console.log('start');
+        },false);
+
+        // 触发移动时的事件touchmove
+        body.addEventListener('touchmove',function () {
+            console.log('move');
+        },false);
+
+        // 离开触摸的事件
+        body.addEventListener('touchend',function () {
+            console.log('end')
+        },false)
+
+       }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
